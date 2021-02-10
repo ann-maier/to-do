@@ -1,0 +1,62 @@
+@import "./common/variables.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: $background-color;
+  font-size: $default-font-size;
+  color: $text-color;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+button,
+.action-button,
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"] {
+  height: $input-size;
+  min-width: $input-size;
+  background: $input-background-color;
+  color: $main-color;
+  border: 1px solid transparent;
+  outline: none;
+  border-radius: $small-spacing;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+button,
+.action-button {
+  transition: all 0.3s;
+
+  &:hover {
+    background: $secondary-color;
+    color: $text-color;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+  }
+}
+
+.remove-button {
+  background: tomato;
+  color: white;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"] {
+  &:focus {
+    border: 1px solid $main-color;
+  }
+}
+
+input[type="checkbox"] {
+  transform: scale(1.3);
+}

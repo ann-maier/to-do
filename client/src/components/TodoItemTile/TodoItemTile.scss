@@ -1,0 +1,36 @@
+@import "../../common/variables.scss";
+
+.todo-item-tile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: $default-spacing;
+  margin: $default-spacing 0;
+  border-radius: $small-spacing;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  background: $todo-background-color;
+  font-weight: bold;
+  font-size: 1.3rem;
+
+  .todo-item-edit-form {
+    * {
+      margin: 0 5px;
+    }
+  }
+
+  .action-buttons {
+    button {
+      margin: 0 $small-spacing;
+    }
+  }
+
+  .subtasks-container {
+    flex-basis: 100%;
+    margin: $default-spacing 0;
+    padding: $default-spacing;
+    background: lighten($subtask-container-background-color, 10%);
+    border-radius: $default-spacing;
+  }
+}

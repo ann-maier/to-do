@@ -1,0 +1,11 @@
+@import "../../common/variables.scss";
+
+.todo-item-form {
+    flex-basis: 100%;
+    text-align: center;
+    padding: $default-spacing;
+
+    * {
+        margin: 0 $small-spacing;
+    }
+}
